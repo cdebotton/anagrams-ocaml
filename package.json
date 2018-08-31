@@ -1,0 +1,26 @@
+{
+  "name": "anagrams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "release": {
+      "releasedBinaries": [
+        "Anagrams.exe"
+      ],
+      "deleteFromBinaryRelease": [
+        "*esy_ocaml_*",
+        "*refmterr-*",
+        "ocaml-*"
+      ]
+    }
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@esy-ocaml/reason": "*",
+    "@esy-ocaml/merlin": "*",
+    "refmterr": "*",
+    "ocaml": "~4.6.0"
+  }
+}

@@ -1,0 +1,4 @@
+(executable
+  (name Anagrams)
+  (public_name Anagrams.exe)
+  (libraries str))
